@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_ServerIp"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:text="服务器IP：" />
+
+            <EditText
+                android:id="@+id/et_ServerIp"
+                android:layout_width="fill_parent"
+                android:layout_height="35sp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@id/tv_ServerIp"
+                android:inputType="numberDecimal|text"
+                android:padding="2dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_RoomId"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:text="房间ID：" />
+
+            <EditText
+                android:id="@+id/et_RoomId"
+                android:layout_width="fill_parent"
+                android:layout_height="35sp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@id/tv_RoomId"
+                android:inputType="numberDecimal|text"
+                android:padding="2dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_UserId"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:text="用户ID：" />
+
+            <EditText
+                android:id="@+id/et_UserId"
+                android:layout_width="fill_parent"
+                android:layout_height="35sp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@id/tv_UserId"
+                android:inputType="numberDecimal|text"
+                android:padding="2dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_DomainId"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:text="域ID：" />
+
+            <EditText
+                android:id="@+id/et_DomainId"
+                android:layout_width="fill_parent"
+                android:layout_height="35sp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@id/tv_DomainId"
+                android:inputType="numberDecimal|text"
+                android:padding="2dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayou_Resolution"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_Resolution"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="分辨率:"
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/spinner_Resolution"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@id/tv_Resolution" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LineraLayout_Rate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_Rate"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="码率："
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/spinner_Bitrate"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@id/tv_Rate" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LineraLayout_VFPS"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_VFPS"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="帧率："
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/spinner_VFPS"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@id/tv_VFPS" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LineraLayout_FEC"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_FEC"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:text="上行冗余度："
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/spinner_FEC"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@id/tv_FEC" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/cb_Remeber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="自动登录" />
+
+            <CheckBox
+                android:id="@+id/cb_EnableNack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="启用NACK" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LineraLayout_Control"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_Ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.mediapro.demo.MainActivity">
+
+    <item
+        android:id="@+id/action_userSettings"
+        android:orderInCategory="100"
+        android:title="设置"
+        app:showAsAction="always" />
+
+
+    <item android:id="@+id/original_filter" android:title="Original" app:showAsAction="never"/>
+    <item android:id="@+id/beauty_filter" android:title="Beauty" app:showAsAction="never"/>
+    <item android:id="@+id/cool_filter" android:title="Cool" app:showAsAction="never"/>
+    <item android:id="@+id/romance_filter" android:title="Romance" app:showAsAction="never"/>
+    <item android:id="@+id/sunrise_filter" android:title="Sunrise" app:showAsAction="never"/>
+    <item android:id="@+id/sunset_filter" android:title="Sunset" app:showAsAction="never"/>
+    <item android:id="@+id/warm_filter" android:title="Warm" app:showAsAction="never"/>
+
+</menu>
